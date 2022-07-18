@@ -121,12 +121,34 @@
 # a="Hey, how are you doing in \b this day?"
 # print(a)
 
-# String operators & built-in functions
-name="TURING"
-print(name.lower()) #Converts to lower case
-print(ord('+')) # ord is used to find the unicode No. for a certain value, which can be letters, numbers, special characters etc.
-print(chr(97)) # chr does the opposite as it finds the value for the unicode inputted.
-# %s and %d will take the values within the parenthesis and input them.
-print('My name is %s and my weight is %d Kg'%('Raz', 75)) #Here, %s will have to be a string and %d an integer.
-print('My name is {0:s} and my weight is {1:d} Kg'.format('Raz', 75))
-print('My name is {} and my weight is {} Kg'.format('Raz', 75))
+# # String operators & built-in functions
+# name="TURING"
+# print(name.lower()) #Converts to lower case
+# print(ord('+')) # ord is used to find the unicode No. for a certain value, which can be letters, numbers, special characters etc.
+# print(chr(97)) # chr does the opposite as it finds the value for the unicode inputted.
+# # %s and %d will take the values within the parenthesis and input them.
+# print('My name is %s and my weight is %d Kg'%('Raz', 75)) #Here, %s will have to be a string and %d an integer.
+# print('My name is {0:s} and my weight is {1:d} Kg'.format('Raz', 75))
+# print('My name is {} and my weight is {} Kg'.format('Raz', 75))
+
+# F-string: An improved string formatting syntax
+from email import message
+
+
+name="Alan"
+print("Hello, %s" % name)
+
+
+first_name="Alan"
+last_name="Turing"
+age=45
+profession='mathematician'
+print("Hello %s %s. You are %s years old. You are a %s." % (first_name, last_name, age, profession))
+print("Hello, {}. You are {}.".format (name, age))
+print("Hello, {1}. You are {0}.".format (age, name)) # this will get you results based on the index.
+print(f"Hello {name}. You are {age} years old. You are a {profession}.")
+
+message=(f"Hi {name}."
+               f"You are a {profession}."
+               )
+print(message)

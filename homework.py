@@ -17,19 +17,22 @@
 # print("a: " + a)
 # print("b: " + b)
 
-# HOMEWORK EXERCISE 4
-height=input("enter your height in m: ")
-weight=input("enter your weight in kg: ")
+# # HOMEWORK EXERCISE 4
+# height=input("enter your height in m: ")
+# weight=input("enter your weight in kg: ")
 
-floatHeight=float(height)
-floatWeight=float(weight)
+# floatHeight=float(height)
+# floatWeight=float(weight)
 
-print(height, weight)
+# print(height, weight)
 
-bmi=floatWeight/(floatHeight**2)
+# bmi=floatWeight/(floatHeight**2)
 
-bmiAsInt=int(bmi)
-print(bmiAsInt)
+# bmiAsInt=int(bmi)
+# print(bmiAsInt)
 
+# HOMEWORK EXERCISE 5
 
-
+first_name="Alan"
+last_name="Turing"
+print(f"Hi there, {first_name} {last_name}! ")
