@@ -31,8 +31,8 @@
 # bmiAsInt=int(bmi)
 # print(bmiAsInt)
 
-# HOMEWORK EXERCISE 5
+# # HOMEWORK EXERCISE 5
 
-first_name="Alan"
-last_name="Turing"
-print(f"Hi there, {first_name} {last_name}! ")
+# first_name="Alan"
+# last_name="Turing"
+# print(f"Hi there, {first_name} {last_name}! ")

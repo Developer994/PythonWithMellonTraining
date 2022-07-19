@@ -131,24 +131,64 @@
 # print('My name is {0:s} and my weight is {1:d} Kg'.format('Raz', 75))
 # print('My name is {} and my weight is {} Kg'.format('Raz', 75))
 
-# F-string: An improved string formatting syntax
-from email import message
+# # F-string: An improved string formatting syntax
+# from email import message
 
 
-name="Alan"
-print("Hello, %s" % name)
+# name="Alan"
+# print("Hello, %s" % name)
 
 
-first_name="Alan"
-last_name="Turing"
-age=45
-profession='mathematician'
-print("Hello %s %s. You are %s years old. You are a %s." % (first_name, last_name, age, profession))
-print("Hello, {}. You are {}.".format (name, age))
-print("Hello, {1}. You are {0}.".format (age, name)) # this will get you results based on the index.
-print(f"Hello {name}. You are {age} years old. You are a {profession}.")
+# first_name="Alan"
+# last_name="Turing"
+# age=45
+# profession='mathematician'
+# print("Hello %s %s. You are %s years old. You are a %s." % (first_name, last_name, age, profession))
+# print("Hello, {}. You are {}.".format (name, age))
+# print("Hello, {1}. You are {0}.".format (age, name)) # this will get you results based on the index.
+# print(f"Hello {name}. You are {age} years old. You are a {profession}.")
 
-message=(f"Hi {name}."
-               f"You are a {profession}."
-               )
-print(message)
+# message=(f"Hi {name}."
+#                f"You are a {profession}."
+#                )
+# print(message)
+
+# # LECTURE 30
+# first='Alan'
+# last='Turing'
+# age=50
+
+# print('The value of pi is approximately: %.2f' %(3.1415))
+# print('The value of pi is approximately: %.3f' %(3.1415))
+
+# print("my name is {x} and I am {y} years old.".format(x='Andreas',y=43))
+# message=f'Hello Mr {last}, I try to learn Python'
+# print(message)
+
+# import math
+# age=50
+# print(f"Alans age times pi is {age*math.pi:.2f}")
+
+# # LECTURE 31 String indexing
+# a='apple'
+# print(a[3]) # prints out l
+# print(a[len(a)-1]) # prints the last letter within the string
+# print(a[-len(a)])
+
+# # LECTURE 32 String Slicing
+# d='avocado'
+# print(len(d))
+# print(d[1:4]) # prints out voc
+# print(d[:5]) # prints out avoca
+# print(d[2:len(d)]) # prints out ocado
+# print(d[:]) # prints out the full string
+# print(d[0:7:2])
+# print(d[::2]) # prints out the increments of two
+# print(d[::-2]) # prints out the increments of two backwards
+
+# LECTURE 33 The difference between strings and numbers
+age="12"
+
+converted_age=int(age)
+if age==12:
+    print('Do you like maths?')
