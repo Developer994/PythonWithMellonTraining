@@ -187,8 +187,8 @@
 # print(d[::-2]) # prints out the increments of two backwards
 
 # LECTURE 33 The difference between strings and numbers
-age="12"
+age='12'
 
 converted_age=int(age)
-if age==12:
+if converted_age==12:
     print('Do you like maths?')
